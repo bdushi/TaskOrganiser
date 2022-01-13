@@ -5,52 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f10b38f2-394c-4f8d-a02b-e8ad6e55dd6d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/common/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/TaskDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/TaskRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/local/Metadata.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/local/TaskLocalDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/local/dao/TaskDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/remote/TaskRemoteDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/di/CoreModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/di/DataSourceModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/di/TaskComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/ui/task/view/TaskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/al/bruno/task/organiser/TaskTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_36_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/task.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/task.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/sqlite-jdbc-3.36.0.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/Connect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/FormView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/GridView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/NewScene.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/TaskController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/TaskView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/model/TaskType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FormView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/ui/FormView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GridView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/ui/GridView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NewScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/common/NewScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TaskController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TaskView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/ui/task/view/TaskView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/model/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/TaskType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/model/TaskType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled104.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/common/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/di/CoreModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/di/CoreModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/model/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

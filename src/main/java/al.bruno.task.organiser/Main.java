@@ -14,8 +14,6 @@ import javafx.stage.Stage;
  * https://github.com/effad/ValidatorFX
  *
  * http://mail.openjdk.java.net/pipermail/openjfx-dev/2018-June/021977.html
- *
- * https://github.com/xerial/sqlite-jdbc
  */
 
 public class Main extends Application {

@@ -1,5 +1,6 @@
 package  al.bruno.task.organiser.di;
 
+import com.j256.ormlite.jdbc.JdbcPooledConnectionSource;
 import dagger.Module;
 import dagger.Provides;
 import dagger.Reusable;
@@ -14,12 +15,26 @@ import static al.bruno.task.organiser.common.Constants.LOG_SQLITE;
 import static al.bruno.task.organiser.common.Constants.URL;
 
 /**
- * https://github.com/xerial/sqlite-jdbc
+ *
  * Connect to a sample database
+ *
+ * https://github.com/xerial/sqlite-jdbc
+ *
+ * https://www.baeldung.com/ormlite
  */
 
 @Module
 public class CoreModule {
+    @Singleton
+    @Provides
+    public JdbcPooledConnectionSource jdbcPooledConnectionSource() {
+        try {
+            return new JdbcPooledConnectionSource(URL);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 
     @Singleton
     @Provides

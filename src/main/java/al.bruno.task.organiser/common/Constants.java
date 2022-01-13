@@ -7,6 +7,6 @@ package al.bruno.task.organiser.common;
  */
 
 public interface Constants {
-    String URL = "jdbc:sqlite:./db/task.db";
+    String URL = "jdbc:sqlite:db/task.db";
     String LOG_SQLITE = "Connection to SQLite has been established.";
 }

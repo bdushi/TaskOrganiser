@@ -1,7 +1,10 @@
 package al.bruno.task.organiser.model;
 
+import com.j256.ormlite.table.DatabaseTable;
+
 import java.time.LocalDate;
 
+@DatabaseTable(tableName = "task")
 public class Task {
     private Long id;
     private String subject;
