@@ -1,15 +1,15 @@
 package  al.bruno.task.organiser.di;
 
-import com.j256.ormlite.jdbc.JdbcPooledConnectionSource;
 import dagger.Module;
 import dagger.Provides;
-import dagger.Reusable;
+import org.jooq.DSLContext;
+import org.jooq.SQLDialect;
+import org.jooq.impl.DSL;
 
 import javax.inject.Singleton;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 import static al.bruno.task.organiser.common.Constants.LOG_SQLITE;
 import static al.bruno.task.organiser.common.Constants.URL;
@@ -21,19 +21,18 @@ import static al.bruno.task.organiser.common.Constants.URL;
  * https://github.com/xerial/sqlite-jdbc
  *
  * https://www.baeldung.com/jooq-intro
+ *
+ * https://github.com/etiennestuder/gradle-jooq-plugin
+ *
+ * https://www.jooq.org/doc/latest/manual/code-generation/codegen-gradle/
  */
 
 @Module
 public class CoreModule {
     @Singleton
     @Provides
-    public JdbcPooledConnectionSource jdbcPooledConnectionSource() {
-        try {
-            return new JdbcPooledConnectionSource(URL);
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return null;
-        }
+    public DSLContext dSLContext(Connection connection) {
+        return DSL.using(connection, SQLDialect.SQLITE);
     }
 
     @Singleton
@@ -46,15 +45,15 @@ public class CoreModule {
             return null;
         }
     }
-
-    @Reusable
-    @Provides
-    public Statement statement(Connection connection) {
-        try(Statement statement = connection.createStatement()) {
-            statement.setQueryTimeout(30);
-            return statement;
-        } catch (SQLException e) {
-            return null;
-        }
-    }
+//
+//    @Reusable
+//    @Provides
+//    public Statement statement(Connection connection) {
+//        try(Statement statement = connection.createStatement()) {
+//            statement.setQueryTimeout(30);
+//            return statement;
+//        } catch (SQLException e) {
+//            return null;
+//        }
+//    }
 }

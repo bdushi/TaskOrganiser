@@ -17,7 +17,6 @@ import javafx.stage.Stage;
  */
 
 public class Main extends Application {
-
     public Main() {
         DaggerTaskComponent.factory().create(this).inject(this);
     }

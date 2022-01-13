@@ -4,6 +4,7 @@ plugins {
 	id 'org.openjfx.javafxplugin' version '0.0.10'
 	id 'org.beryx.jlink' version '2.24.1'
 	id 'org.flywaydb.flyway' version '8.4.1'
+	id 'nu.studer.jooq' version '6.0.1'
 }
 
 group 'al.bruno'
@@ -25,6 +26,10 @@ javafx {
 	modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
+configurations {
+	flywayMigration
+}
+
 flyway {
 	url = "jdbc:sqlite:/Users/bruno/projects/TaskOrganiser/db/task.db"
 }
@@ -34,7 +39,11 @@ dependencies {
 	annotationProcessor 'com.google.dagger:dagger-compiler:2.40.5'
 //	testAnnotationProcessor 'com.google.dagger:dagger-compiler::2.40.5'
 	implementation 'org.xerial:sqlite-jdbc:3.36.0.3'
-	implementation 'com.j256.ormlite:ormlite-jdbc:6.1'
+	jooqGenerator 'org.xerial:sqlite-jdbc:3.36.0.3'
+//	implementation 'org.jooq:jooq-codegen:3.16.1'
+//	implementation 'org.jooq:jooq-meta:3.16.1'
+//	implementation 'org.jooq:jooq:3.16.1'
+
 	testImplementation 'junit:junit:4.13.2'
 	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
 	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
@@ -52,4 +61,44 @@ jlink {
 	launcher {
 		name = 'app'
 	}
+}
+
+jooq {
+	configurations {
+		main {
+			generationTool {
+				logging = org.jooq.meta.jaxb.Logging.WARN
+				jdbc {
+					driver = 'org.sqlite.JDBC'
+					url = 'jdbc:sqlite:/Users/bruno/projects/TaskOrganiser/db/task.db'
+				}
+				generator {
+					name = 'org.jooq.codegen.DefaultGenerator'
+					strategy {
+						name = 'org.jooq.codegen.DefaultGeneratorStrategy'
+					}
+					database {
+						name = 'org.jooq.meta.sqlite.SQLiteDatabase'
+					}
+					target {
+						packageName = ' al.bruno.task.organiser.model'
+					}
+				}
+			}
+		}
+	}
+}
+
+tasks.named('generateJooq').configure {
+	// ensure database schema has been prepared by Flyway before generating the jOOQ sources
+	dependsOn tasks.named('flywayMigrate')
+
+	// declare Flyway migration scripts as inputs on the jOOQ task
+	inputs.files(fileTree('src/main/resources/db/migration'))
+			.withPropertyName('migrations')
+			.withPathSensitivity(PathSensitivity.RELATIVE)
+
+	// make jOOQ task participate in incremental builds and build caching
+	allInputsDeclared = true
+	outputs.cacheIf { true }
 }
