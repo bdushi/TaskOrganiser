@@ -1,0 +1,54 @@
+plugins {
+	id 'java'
+	id 'application'
+	id 'org.openjfx.javafxplugin' version '0.0.10'
+	id 'org.beryx.jlink' version '2.24.1'
+	id 'org.flywaydb.flyway' version '8.4.1'
+}
+
+group 'al.bruno'
+version '1.0-SNAPSHOT'
+
+repositories {
+	mavenCentral()
+}
+
+sourceCompatibility = '11'
+targetCompatibility = '11'
+
+application {
+	mainClass = 'al.bruno.task.organiser.Main'
+}
+
+javafx {
+	version = "17.0.1"
+	modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+flyway {
+	url = "jdbc:sqlite:/Users/bruno/projects/TaskOrganiser/db/task.db"
+}
+
+dependencies {
+	implementation 'com.google.dagger:dagger:2.40.5'
+	annotationProcessor 'com.google.dagger:dagger-compiler:2.40.5'
+//	testAnnotationProcessor 'com.google.dagger:dagger-compiler::2.40.5'
+	implementation 'org.xerial:sqlite-jdbc:3.36.0.3'
+	testImplementation 'junit:junit:4.13.2'
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+}
+
+mainClassName = 'al.bruno.task.organiser.Main'
+
+test {
+	useJUnitPlatform()
+}
+
+jlink {
+	imageZip = project.file("${buildDir}/distributions/app-${javafx.platform.classifier}.zip")
+	options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+	launcher {
+		name = 'app'
+	}
+}
