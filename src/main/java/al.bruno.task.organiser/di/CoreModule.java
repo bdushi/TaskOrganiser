@@ -23,7 +23,7 @@ import static al.bruno.task.organiser.common.Constants.URL;
  *
  * https://github.com/xerial/sqlite-jdbc
  *
- * https://www.baeldung.com/ormlite
+ * https://www.baeldung.com/spring-boot-sqlite
  */
 
 @Module
