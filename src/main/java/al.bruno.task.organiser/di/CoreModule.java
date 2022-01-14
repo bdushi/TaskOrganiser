@@ -1,5 +1,8 @@
 package  al.bruno.task.organiser.di;
 
+import al.bruno.task.organiser.model.Task;
+import com.j256.ormlite.dao.Dao;
+import com.j256.ormlite.dao.DaoManager;
 import com.j256.ormlite.jdbc.JdbcPooledConnectionSource;
 import dagger.Module;
 import dagger.Provides;
@@ -32,6 +35,16 @@ public class CoreModule {
             return new JdbcPooledConnectionSource(URL);
         } catch (SQLException e) {
             e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Singleton
+    @Provides
+    public Dao<Task, Long> taskDao(JdbcPooledConnectionSource jdbcPooledConnectionSource) {
+        try {
+            return DaoManager.createDao(jdbcPooledConnectionSource, Task.class);
+        } catch (SQLException e) {
             return null;
         }
     }
