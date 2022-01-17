@@ -1,8 +1,28 @@
 package al.bruno.task.organiser.model;
 
-public class TaskType {
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+import java.io.Serializable;
+
+@Entity
+@Table( name = "task_type" )
+public class TaskType implements Serializable {
+    @Id
+    @Column(name = "_id")
     private Long id;
+    @Column(name = "_task_type")
     private String taskType;
+
+    public TaskType() {
+
+    }
+    public TaskType(Long id, String taskType) {
+        this.id = id;
+        this.taskType = taskType;
+    }
 
     public TaskType(String taskType) {
         this.taskType = taskType;
@@ -21,17 +41,5 @@ public class TaskType {
 
     public void setTaskType(String taskType) {
         this.taskType = taskType;
-    }
-
-    public static class TaskTypeDDL {
-
-        public static String TABLE_NAME = "task_type";
-        public static String ID = "_id";
-        public static String TASK_TYPE = "_task_type";
-
-        public static String CREATE_TASK_TYPE = "CREATE TABLE " + TABLE_NAME + " ("
-                + ID + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "
-                + TASK_TYPE + " TEXT"
-                + ")";
     }
 }

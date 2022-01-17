@@ -1,16 +1,29 @@
 package al.bruno.task.organiser.model;
 
-import com.j256.ormlite.table.DatabaseTable;
+import al.bruno.task.organiser.hibernate.config.LocalDateAttributeConverter;
+import jakarta.persistence.*;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-@DatabaseTable(tableName = "task")
-public class Task {
+@Entity
+@Table( name = "task" )
+public class Task implements Serializable {
+    @Id
+    @Column(name = "_id")
     private Long id;
+    @Column(name = "_subject")
     private String subject;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "_task_type", referencedColumnName = "_id")
     private TaskType taskType;
+    @Column(name = "_duration")
     private Long duration;
+    @Column(name = "_difficulties")
     private Integer difficulties;
+
+    @Convert(converter = LocalDateAttributeConverter.class)
+    @Column(name = "_deadline")
     private LocalDate deadline;
 
     public Task(Long id, String subject, TaskType taskType, Long duration, Integer difficulties, LocalDate deadline) {
@@ -74,24 +87,5 @@ public class Task {
 
     public void setDeadline(LocalDate deadline) {
         this.deadline = deadline;
-    }
-
-    public static class TaskDDL {
-        public static String TABLE_NAME = "task";
-        public static String ID = "_id";
-        public static String SUBJECT = "_subject";
-        public static String TASK_TYPE = "_task_type";
-        public static String DURATION = "_duration";
-        public static String DIFFICULTIES = "_difficulties";
-        public static String DEADLINE = "_deadline";
-
-        public static String CREATE_TASK_TYPE = "CREATE OR REPLACE TABLE " + TABLE_NAME + " ("
-                + ID + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "
-                + SUBJECT + " TEXT,"
-                + TASK_TYPE + " INTEGER REFERENCES task_type(_id) ON UPDATE CASCADE ON DELETE CASCADE,"
-                + DURATION + " REAL,"
-                + DIFFICULTIES + " INTEGER,"
-                + DEADLINE + " TEXT,"
-                + ")";
     }
 }
