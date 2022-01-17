@@ -5,64 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f10b38f2-394c-4f8d-a02b-e8ad6e55dd6d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/TaskTypeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/local/TaskTypeLocalDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/hibernate/config/LocalDateAttributeConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/hibernate/config/SQLiteDialect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/hibernate/config/SQLiteIdentityColumnSupport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/hibernate/config/Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/hibernate/config/DaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/common/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/common/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/data/source/TaskDataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/data/source/TaskDataSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/data/source/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/data/source/TaskRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/data/source/local/TaskLocalDataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/data/source/local/TaskLocalDataSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/di/CoreModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/di/CoreModule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/di/CoreModule_ConnectionFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/di/CoreModule_StatementFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/di/DaggerTaskComponent$Factory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/di/DaggerTaskComponent$Factory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/di/DaggerTaskComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/di/DaggerTaskComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/di/DataSourceModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/di/DataSourceModule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/model/Task$TaskCreateDatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/model/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/model/TaskType$TaskTypeCreateDatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/model/TaskType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/model/TaskType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/TaskOrganiser-1.0-SNAPSHOT.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/TaskOrganiser-1.0-SNAPSHOT.tar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/TaskOrganiser-1.0-SNAPSHOT.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/TaskOrganiser-1.0-SNAPSHOT.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/al/bruno/task/organiser/di/CoreModule_ConnectionFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/al/bruno/task/organiser/di/CoreModule_StatementFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/al/bruno/task/organiser/di/DaggerTaskComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/al/bruno/task/organiser/di/DaggerTaskComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/TaskOrganiser-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/TaskOrganiser-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/al.bruno.task.organiser.TaskTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/al.bruno.task.organiser.TaskTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/al.bruno.task.organiser.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/al.bruno.task.organiser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/db/migration/V1__create_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/db/migration/V1__create_database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/TaskOrganiser" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/TaskOrganiser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/TaskOrganiser.bat" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/TaskOrganiser.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-al.bruno.task.organiser.TaskTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-al.bruno.task.organiser.TaskTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/task.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/TaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/local/TaskLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/local/TaskLocalDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/local/dao/TaskDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/local/dao/TaskDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/di/CoreModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/di/CoreModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/di/DataSourceModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/di/DataSourceModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/model/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/model/TaskType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/model/TaskType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/local/TaskTypeLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/local/TaskTypeLocalDataSource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
