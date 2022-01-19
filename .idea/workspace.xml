@@ -5,10 +5,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f10b38f2-394c-4f8d-a02b-e8ad6e55dd6d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/hibernate/config/Dao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/hibernate/config/DaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/common/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/common/NewScene.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/data/source/TaskDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/data/source/TaskRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/data/source/TaskRepository_Factory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/data/source/local/Metadata.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/data/source/local/TaskLocalDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/data/source/local/dao/TaskDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/data/source/remote/TaskRemoteDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/di/CoreModule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/di/DaggerTaskComponent$Factory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/di/DaggerTaskComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/di/DataSourceModule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/di/TaskComponent$Factory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/di/TaskComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/model/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/model/TaskType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/ui/FormView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/ui/GridView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/ui/task/view/TaskController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/al/bruno/task/organiser/ui/task/view/TaskView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/al/bruno/task/organiser/TaskTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/TaskOrganiser-1.0-SNAPSHOT.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/TaskOrganiser-1.0-SNAPSHOT.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/al/bruno/task/organiser/data/source/TaskRepository_Factory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main/al/bruno/task/organiser/di/DaggerTaskComponent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/TaskOrganiser-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/al.bruno.task.organiser.TaskTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/al.bruno.task.organiser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/db/migration/V1__create_database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/TaskOrganiser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/TaskOrganiser.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-al.bruno.task.organiser.TaskTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/task.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/TaskDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/TaskDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/TaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/TaskTypeDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/TaskTypeDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/TaskTypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/TaskTypeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/local/Metadata.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/local/TaskLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/local/TaskLocalDataSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/local/TaskTypeLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/local/TaskTypeLocalDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/data/source/local/dao/TaskDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/di/CoreModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/di/CoreModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/hibernate/config/Dao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/hibernate/config/DaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/hibernate/config/LocalDateAttributeConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/hibernate/config/SQLiteDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/hibernate/config/SQLiteIdentityColumnSupport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/entity/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/model/TaskType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/entity/TaskType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/ui/FormView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/ui/FormView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +119,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="TaskOrganiser" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="TaskOrganiser" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="flyway" type="c8890929:TasksNode$1" />
+                <item name="sqldelight" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -104,6 +172,11 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/al.bruno.task.organiser/sqldelight/al/bruno/task/organiser/model" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.TaskOrganiser [run]">
     <configuration name="TaskOrganiser [build]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
@@ -126,7 +199,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TaskOrganiser [flywayInfo]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TaskOrganiser [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -137,7 +210,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="flywayInfo" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -147,7 +220,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TaskOrganiser [flywayMigrate]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TaskOrganiser [generateSqlDelightInterface]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -158,49 +231,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="flywayMigrate" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="TaskOrganiser [flywayRepair]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="flywayRepair" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="TaskOrganiser [flywayValidate]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="flywayValidate" />
+            <option value="generateSqlDelightInterface" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -215,7 +246,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--info" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -231,13 +262,55 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="TaskOrganiser [verifyMainTaskOrganaiserMigration]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="verifyMainTaskOrganaiserMigration" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TaskOrganiser [verifySqlDelightMigration]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="verifySqlDelightMigration" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.TaskOrganiser [run]" />
-        <item itemvalue="Gradle.TaskOrganiser [flywayMigrate]" />
-        <item itemvalue="Gradle.TaskOrganiser [flywayInfo]" />
-        <item itemvalue="Gradle.TaskOrganiser [flywayRepair]" />
-        <item itemvalue="Gradle.TaskOrganiser [flywayValidate]" />
+        <item itemvalue="Gradle.TaskOrganiser [generateSqlDelightInterface]" />
+        <item itemvalue="Gradle.TaskOrganiser [clean]" />
+        <item itemvalue="Gradle.TaskOrganiser [verifySqlDelightMigration]" />
+        <item itemvalue="Gradle.TaskOrganiser [verifyMainTaskOrganaiserMigration]" />
       </list>
     </recent_temporary>
   </component>
@@ -251,5 +324,8 @@
       <updated>1642006414610</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sq" />
   </component>
 </project>

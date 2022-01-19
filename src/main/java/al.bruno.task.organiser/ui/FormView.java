@@ -1,6 +1,6 @@
 package al.bruno.task.organiser.ui;
 
-import al.bruno.task.organiser.model.TaskType;
+import al.bruno.task.organiser.entity.TaskType;
 import javafx.collections.FXCollections;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;

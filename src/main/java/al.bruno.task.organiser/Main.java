@@ -1,13 +1,18 @@
 package al.bruno.task.organiser;
 
 import al.bruno.task.organiser.common.NewScene;
+import al.bruno.task.organiser.data.TaskOrganaiser;
+import al.bruno.task.organiser.data.TaskOrganiser.TaskOrganaiserImplKt;
 import al.bruno.task.organiser.data.source.TaskTypeRepository;
+//import al.bruno.task.organiser.di.DaggerTaskComponent;
 import al.bruno.task.organiser.di.DaggerTaskComponent;
+import al.bruno.task.organiser.entity.TaskType;
 import al.bruno.task.organiser.ui.task.view.TaskView;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
 import javax.inject.Inject;
+import java.util.function.Consumer;
 
 /**
  * https://dagger.dev/
@@ -26,7 +31,6 @@ public class Main extends Application {
 
     public Main() {
         DaggerTaskComponent.factory().create(this).inject(this);
-        System.out.println(taskTypeRepository.taskType().toString());
     }
 
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package al.bruno.task.organiser.data.source;
 
-import al.bruno.task.organiser.model.Task;
+import al.bruno.task.organiser.entity.Task;
 
 import java.util.List;
 

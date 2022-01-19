@@ -1,15 +1,22 @@
-package  al.bruno.task.organiser.di;
+package al.bruno.task.organiser.di;
 
+import al.bruno.task.organiser.data.TaskOrganaiser;
+import al.bruno.task.organiser.data.TaskOrganiser.TaskOrganaiserImplKt;
+import al.bruno.task.organiser.ui.task.view.TaskView;
+import com.squareup.sqldelight.db.SqlDriver;
+import com.squareup.sqldelight.sqlite.driver.JdbcSqliteDriver;
 import dagger.Module;
 import dagger.Provides;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
+import dagger.Reusable;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 
 import javax.inject.Singleton;
+import java.util.Properties;
+
+import static al.bruno.task.organiser.common.Constants.URL;
 
 /**
- *
  * Connect to a sample database
  *
  * https://github.com/xerial/sqlite-jdbc
@@ -19,15 +26,28 @@ import javax.inject.Singleton;
 
 @Module
 public class CoreModule {
-    @Singleton
+    @Reusable
     @Provides
-    public SessionFactory sessionFactory() {
-        return new Configuration().configure().buildSessionFactory();
+    public SqlDriver sqlDriver() {
+        return new JdbcSqliteDriver(JdbcSqliteDriver.IN_MEMORY, new Properties());
     }
 
+    @Reusable
     @Provides
-    @Singleton
-    public Session session(SessionFactory sessionFactory) {
-        return sessionFactory.openSession();
+    public TaskOrganaiser taskOrganaiser(SqlDriver sqlDriver) {
+        TaskOrganaiser.Companion.getSchema().create(sqlDriver);
+        return TaskOrganaiser.Companion.invoke(sqlDriver);
+    }
+
+    @Reusable
+    @Provides
+    public Scene newScene(Pane pane) {
+        return new Scene(pane, 720, 480);
+    }
+
+    @Reusable
+    @Provides
+    public TaskView taskView() {
+        return new TaskView();
     }
 }
