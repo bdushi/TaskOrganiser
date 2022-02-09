@@ -2,6 +2,8 @@ package al.bruno.task.organiser.di;
 
 import al.bruno.task.organiser.data.TaskOrganaiser;
 import al.bruno.task.organiser.data.TaskOrganiser.TaskOrganaiserImplKt;
+import al.bruno.task.organiser.ui.FormView;
+import al.bruno.task.organiser.ui.GridView;
 import al.bruno.task.organiser.ui.task.view.TaskView;
 import com.squareup.sqldelight.db.SqlDriver;
 import com.squareup.sqldelight.sqlite.driver.JdbcSqliteDriver;
@@ -49,5 +51,17 @@ public class CoreModule {
     @Provides
     public TaskView taskView() {
         return new TaskView();
+    }
+
+    @Reusable
+    @Provides
+    public GridView gridView() {
+        return new GridView();
+    }
+
+    @Reusable
+    @Provides
+    public FormView formView() {
+        return new FormView();
     }
 }
