@@ -1,0 +1,9 @@
+-- src/main/al/bruno/task/organiser/data/taskType;
+
+CREATE TABLE taskType (_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, _task_type TEXT);
+
+insert: INSERT INTO taskType(_task_type) VALUES (?);
+
+getAll: SELECT * FROM taskType;
+
+INSERT INTO taskType(_task_type) VALUES ('test');

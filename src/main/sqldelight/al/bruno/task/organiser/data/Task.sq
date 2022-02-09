@@ -1,0 +1,9 @@
+-- src/main/al/bruno/task/organiser/data/task;
+
+CREATE TABLE IF NOT EXISTS task(_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+                _subject TEXT,
+                _task_type INTEGER REFERENCES taskType(_id) ON UPDATE CASCADE ON DELETE CASCADE,
+                _duration INTEGER,
+                _difficulties INTEGER,
+                _deadline TEXT
+                );
